@@ -1,11 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Driving School multi page Webside</title>
+    <!-- unicode cdn -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- swiper cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>About - Diposh's Driving School multi page Webside</title>
+    <!-- COSTUM CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./about.css">
+    <link rel="shortcut icon" href="../assets/dipesh.JPG" type="image">
 </head>
+
 <body>
-    
+
+    <!-- =============== NAV SECTION ================ -->
+    <nav>
+        <div class="container nav__container">
+            <a href="./index.html" class="nav__logo">DIPESH</a>
+            <div class="nav__content">
+                <menu class="nav__menu">
+                    <a href="../index.html">Home</a>
+                    <a href="./about/about.html" class="active">About</a>
+                    <a href="../gallery/gallery.html">Galarry</a>
+                    <a href="../programme/programme.html">Programme</a>
+                    <a href="../faqs/faqs.html">FAQS</a>
+                    <a href="../contact/contact.html">Contact</a>
+                </menu>
+                <button class="theme__btn"><i class="uil uil-moon"></i></button>
+                <button class="nav__menu-open"><i class="uil uil-bars"></i></button>
+                <button class="nav__menu-close"><i class="uil uil-multiply"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- =============== END OF NAV ================ -->
+
+    <header class="page__header">
+        <div class="page__header-content">
+            <h2>About Us</h2>
+            <p>Welcome to the Secrets API. This API allows you to manage and retrieve secrets anonymously. Please refer
+                to the documentation below for details on how to interact with the API.
+                The API is rate limited to 100 requests every 15 minutes.
+                All user submitted data (including registration, tokens, usernames, passwords, secrets) are erased on a
+                regular basis.</p>
+        </div>
+    </header>
+
+    <section class="container about__container">
+        <div class="about__image">
+            <img src="../assets/practical10.jpg" alt="">
+        </div>
+        <div class="about__story">
+            <h2>we go to <span>Extra Mile!</span></h2>
+            <p>Basic Authentication is required for some endpoints. Use your username and password to authenticate.
+                An API Key is requred to Authorize certain endpoints. Use the API key obtained from the
+                /generate-api-key endpoint.
+                Bearer Token Authentication is required for some endpoints. Use your username and password to get a
+                token obtained from the /get-auth-token endpoint.
+            </p>
+            <p>Before reporting any security issues, please reference the SECURITY.md for the project, partcularly the following::
+                If you give end-users unfettered access to the EJS render method, you are using EJS in an inherently un-secure way. Please do not report security issues that stem from doing that.
+                EJS is effectively a JavaScript runtime. Its entire job is to execute JavaScript. If you run the EJS render method without checking the inputs yourself, you are responsible for the results.
+                In short, DO NOT submit 'vulnerabilities' that include this snippet of code:</p>
+                <p>What is the "E" for? "Embedded?" Could be. How about "Effective," "Elegant," or just "Easy"? EJS is a simple templating language that lets you generate HTML markup with plain JavaScript. No religiousness about how to</p>
+                <p>We love JavaScript. It's a totally friendly language. All templating languages grow to be Turing-complete. Just cut out the middle-man, and use JS!</p>
+        </div>
+    </section>
+
+
+    <section class="instructor">
+        <div class="container instructors__container">
+            <h2>Meet Our Instructors</h2>
+            <p>Don't waste time and attention figuring out arcane new syntax because 'elegance' — or how to preprocess your data so it will actually render right.</p>
+            <ul class="instructors__list">
+                <li class="instructor">
+                    <div class="instructor__image">
+                        <img src="../assets/candidate1.jpg" alt="">
+                    </div>
+                    <h4>Dipesh Thada</h4>
+                    <p>CEO</p>
+                </li>
+
+                <li class="instructor">
+                    <div class="instructor__image">
+                        <img src="../assets/candidate2.jpg" alt="">
+                    </div>
+                    <h4>Michel lewin</h4>
+                    <p>Cheif Manager</p>
+                </li>
+
+                <li class="instructor">
+                    <div class="instructor__image">
+                        <img src="../assets/candidate3.jpg" alt="">
+                    </div>
+                    <h4>Shoun lee</h4>
+                    <p>Manager</p>
+                </li>
+
+                <li class="instructor">
+                    <div class="instructor__image">
+                        <img src="../assets/candidate4.jpg" alt="">
+                    </div>
+                    <h4>Daniel </h4>
+                    <p>Instructor</p>
+                </li>
+
+                <li class="instructor">
+                    <div class="instructor__image">
+                        <img src="../assets/candidate5.jpg" alt="">
+                    </div>
+                    <h4>Dinesh Thada</h4>
+                    <p>Instructor</p>
+                </li>
+
+                <li class="instructor">
+                    <div class="instructor__image">
+                        <img src="../assets/candidate6.jpg" alt="">
+                    </div>
+                    <h4>Shiva Shreshtha</h4>
+                    <p>Instructor</p>
+                </li>
+
+                <li class="instructor">
+                    <div class="instructor__image">
+                        <img src="../assets/candidate7.jpg" alt="">
+                    </div>
+                    <h4>Bhuwan KC</h4>
+                    <p>Instructor</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- =============== FOOTER SECTION ================ -->
+    <footer>
+        <div class="container footer__container">
+            <menu class="footer__menu">
+                <a href="#">Privacy</a>
+                <a href="#">Terms amd Condition</a>
+                <a href="#">Other Interest</a>
+            </menu>
+            <menu class="footer__social">
+                <a href="#" target="_blank"><i class="uil uil-instagram-alt"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-facebook"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-twitter"></i></a>
+            </menu>
+        </div>
+        <small class="footer__copyright">
+            &copy; 2025 DIPESH THADA. All Right Reserved
+        </small>
+    </footer>
+    <!-- ================= END OF FOOTER =============== -->
+
+    <script src="../main.js"></script>
 </body>
-</html> 
+
+</html>

@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <!-- swiper cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>Diposh's Driving School multi page Webside</title>
+    <title>Dipesh's - Driving School multi page Webside</title>
     <!-- COSTUM CSS -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./assets/dipesh.JPG" type="image">
+    <!-- ANIMATE ON SCROLL -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 </head>
@@ -43,7 +46,7 @@
     <!-- =============== HERO SECTION ================ -->
     <section class="hero section__header">
         <div class="container hero__container">
-            <article class="hero__content">
+            <article class="hero__content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                 <h1>Your one stop <br>hands on driving school</h1>
                 <p>Rev up your motivation with our collection of 50 original and uplifting quotes designed to ignite the
                     driving spirit within you. From the open road to life’s twists and turns, these inspirational quotes
@@ -51,10 +54,10 @@
 
                 <div class="hero__cta">
                     <a href="./contact/contact.html" class="btn btn-primary">Get Started</a>
-                    <a href="./programme/programme.html" class="btn">Get Started</a>
+                    <a href="./programme/programme.html" class="btn">See programe</a>
                 </div>
             </article>
-            <article class="hero__images">
+            <article class="hero__images" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
                 <div class="hero__image">
                     <img src="./assets/theory1.webp" alt="">
                 </div>
@@ -79,11 +82,11 @@
     <!-- =============== ABOUT SECTION ================ -->
     <section class="about">
         <div class="container about__container">
-            <article class="about__left">
+            <article class="about__left" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
                 <img src="./assets/practical7.jpg" alt="">
             </article>
 
-            <article class="about__right">
+            <article class="about__right" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000">
                 <header class="section__header">
                     <h4>About Us</h4>
                     <h1>Who we are</h1>
@@ -115,7 +118,7 @@
                 <h1>Diffrent Programme For You</h1>
             </header>
             <ul class="ourProgramme__list">
-                <li class="ourProgramme__item">
+                <li class="ourProgramme__item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                     <div class="ourProgramme__item-image">
                         <img src="./assets/theory3.jpg" alt="">
                     </div>
@@ -124,7 +127,7 @@
                         <a href="./programme/programme.html">Learn More</a>
                     </div>
                 </li>
-                <li class="ourProgramme__item">
+                <li class="ourProgramme__item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
                     <div class="ourProgramme__item-image">
                         <img src="./assets/graduate7.avif" alt="">
                     </div>
@@ -133,7 +136,7 @@
                         <a href="./programme/programme.html">Learn More</a>
                     </div>
                 </li>
-                <li class="ourProgramme__item">
+                <li class="ourProgramme__item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
                     <div class="ourProgramme__item-image">
                         <img src="./assets/practical8.jpeg" alt="">
                     </div>
@@ -142,7 +145,7 @@
                         <a href="./programme/programme.html">Learn More</a>
                     </div>
                 </li>
-                <li class="ourProgramme__item">
+                <li class="ourProgramme__item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
                     <div class="ourProgramme__item-image">
                         <img src="./assets/practical4.jpg" alt="">
                     </div>
@@ -255,7 +258,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Packages</th>
+                        <th>Package</th>
                         <th>Duration</th>
                         <th>Price ($)</th>
                     </tr>
@@ -411,14 +414,40 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
+    <!-- =============== END OF TESTIMONIALS SECTION ================ -->
+
+
+
+
+
+    <!-- =============== FOOTER SECTION ================ -->
+    <footer>
+        <div class="container footer__container">
+            <menu class="footer__menu">
+                <a href="#">Privacy</a>
+                <a href="#">Terms amd Condition</a>
+                <a href="#">Other Interest</a>
+            </menu>
+            <menu class="footer__social">
+                <a href="#" target="_blank"><i class="uil uil-instagram-alt"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-facebook"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-twitter"></i></a>
+            </menu>
+        </div>
+        <small class="footer__copyright">
+            &copy; 2025 DIPESH THADA. All Right Reserved
+        </small>
+    </footer>
 
 
 
     <!-- SWIPER JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./main.js">
-        
-    </script>
+    <script src="./main.js"></script>
+    <script src="index.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
 </body>
 
 </html>

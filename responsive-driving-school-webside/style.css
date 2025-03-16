@@ -56,6 +56,21 @@ body{
     font-weight: 500;
 }
 
+
+.dark {
+    --color-gray-900: #f3f6f7;
+    --color-gray-800: #d6e1e6;
+    --color-gray-700: #bdcdd4;
+    --color-gray-600: #a0b2b9;
+    --color-gray-500: #8ea3ac;
+    --color-gray-400: #7a8b93;
+    --color-gray-300: #5a6d75;
+    --color-gray-200: #3f4d53;
+    --color-gray-100: #2a3439;
+    --color-gray-50: #182023;
+    --color-gray-0: #080b0c;
+}
+
 .container{
     width: var(--container-w-lg);
     margin-inline: auto;
@@ -202,5 +217,204 @@ nav a:active{
 
 .theme__btn:hover{
     color: var(--color-color-vairant);
+}
+/* =============== END OF NAVBAR ================= */
+.page__header{
+    height: 15rem;
+    background: url(./assets/graduate7.avif) center center/cover;
+    display: flex;
+    place-content: center;
+    margin: 4rem 0;
+    position: relative;
+}
+
+.page__header::before{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: #03031b;
+    opacity: 0.6;
+}
+
+.page__header-content{
+    width: 50%;
+    text-align: center;
+    z-index: 1;
+}
+
+.page__header-content *{
+    color: var(--color-gray-0);
+}
+
+
+.page__header-content h2{
+    margin-bottom: 0.7rem;
+}
+
+
+
+
+/* =============== FOOTER ================= */
+
+footer{
+    border-top: 0.5rem solid var(--color-gray-0);
+}
+
+footer *{
+    color: var(--color-gray-900);
+}
+
+.footer__container{
+    padding: 5rem 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__menu, .footer__social{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.footer__social a{
+    background: var(--color-gray-0);
+    height: 3rem;
+    aspect-ratio: 1/1;
+    border-radius: var(--radius-3);
+    place-items: center;
+    display: grid;
+}
+
+.footer__social a i{
+    font-size: 1.2rem;
+    color: var(--color-gray-900);
+}
+
+.footer__copyright{
+    text-align: center;
+    display: block;
+    padding: 1.5rem;
+    border-top: 4px solid var(--color-gray-300);
+}
+
+/* =============== MEDIA QUERIS (small screen)  ================= */
+
+@media  screen and (max-width: 600px) {
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.4rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+    
+    .btn{
+        padding: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .container{
+        width: var(--container-w-md);
+    }
+
+    .nav__content{
+        gap: 3rem;
+    }
+
+    .nav__menu{
+        position: fixed;
+        top: 4rem;
+        right: 4%;
+        flex-direction: column;
+        gap: 0;
+        width: 16rem;
+        display: none;
+        perspective: 200px;
+    }
+
+    .nav__menu a{
+        background: linear-gradient(var(--color-gray-800), var(--color-gray-700));
+        color: var(--color-gray-0);
+        height: 4rem;
+        display: grid;
+        place-items: center;
+        width: 100%;
+        box-shadow: -2rem 4rem 3rem rgba(0, 0, 0, 0.2);
+        animation: animation1 600ms ease forwards;
+        transform: rotateX(90deg);
+        opacity: 0;
+        transform-origin: top;
+    }
+
+    .nav__menu a:nth-child(2){
+        animation-delay: 300ms;
+    }
+
+    .nav__menu a:nth-child(3){
+        animation-delay: 550ms;
+    }
+
+    .nav__menu a:nth-child(4){
+        animation-delay: 750ms;
+    }
+
+    .nav__menu a:nth-child(5){
+        animation-delay: 900ms;
+    }
+
+    .nav__menu a:nth-child(6){
+        animation-delay: 1050ms;
+    }
+
+    @keyframes animation1 {
+        to{
+            transform: rotateX(0);
+            opacity: 1;
+        }
+    }
+
+    .nav__menu a:active{
+        background: var(--color-primary);
+        color: var(--color-gray-0);
+    }
+
+    .nav__menu-open{
+        display: inline-block;
+    }
+
+    .page__header{
+        height: 20rem;
+    }
+
+    .page__header-content{
+        width: var(--container-w-md);
+    }
+
+    .footer__container{
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .footer__menu{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer__menu a{
+        display: block;
+    }
+
+    .footer__social{
+        gap: 2rem;
+    }
 }
 
